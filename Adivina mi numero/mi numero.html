@@ -3,16 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <title>Adivina el número</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: goldenrod;
+        margin-left: 20px;
+      }
+      /* ...estilos adicionales... */
+    </style>
   </head>
   <body>
-    <h1>Adivina el número</h1>
-    <p>Piensa en un número del 1 al 100 y luego haz clic en "Comenzar".</p>
-    <button id="comenzar" onclick="adivinarNumero()">Comenzar</button>
-    <div id="adivinanza" style="display:none;">
-      <p>¿Es este tu número?</p>
-      <p id="numero"></p>
-      <button onclick="esTuNumero()">Sí</button>
-      <button onclick="adivinarNumero()">No</button>
+    <title>Adivina el número</title>
+  </head>
+  <body>
+    <div>
+      <h1>Adivina el número</h1>
+      <script src=".//mi numero.js"></script>
+      <p>Piensa en un número del 1 al 100 y luego haz clic en "Comenzar".</p>
+      <button onclick="adivinarNumero()">Comenzar</button>
+      <div id="adivinanza" style="display:none;">
+        <p>¿Es este tu número?</p>
+        <p id="numero"></p>
+        <button onclick="esTuNumero()">Sí</button>
+        <button onclick="adivinarNumero()">No</button>
+      </div>
     </div>
     <script>
       function adivinarNumero() {
@@ -35,3 +49,5 @@
     </script>
   </body>
 </html>
+
+!
